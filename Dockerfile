@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:18.04
 MAINTAINER m.mohdazar45@gmail.com
 RUN apt-get update
 RUN apt-get install apache2 -y
