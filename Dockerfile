@@ -9,5 +9,5 @@ WORKDIR /var/www/html
 RUN unzip photogenic.zip
 RUN cp -rvf photogenic/* .
 RUN rm -rf photogenic photogenic.zip
-CMD service apache2 start
+CMD ["/usr/sbin/apache2", "-D",  "FOREGROUND"]
 EXPOSE 80
